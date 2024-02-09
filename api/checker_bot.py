@@ -56,22 +56,6 @@ async def check_users(event):
     await event.respond(Info.msg)
     return Info
 
-"""
-    # Show all user IDs in a chat
-    async for user in client.iter_participants(chat):
-        print(user.id)
-
-    # Search by name
-    async for user in client.iter_participants(chat, search='name'):
-        print(user.username)
-
-    # Filter by admins
-    from telethon.tl.types import ChannelParticipantsAdmins
-    async for user in client.iter_participants(chat, filter=ChannelParticipantsAdmins):
-        print(user.first_name)
-"""
-
-
 
 async def main():
     await client.start()
